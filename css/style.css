@@ -77,6 +77,11 @@ body {
   margin-bottom: 38px;
 }
 
+.description.animate__animated.animate__fadeInRight {
+  --animate-delay: 2s;
+}
+
+
 .button {
   background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
   box-shadow: 0px 4px 0px #B68500;
@@ -135,6 +140,86 @@ body {
   font-size: 16px;
   line-height: 28px;
   margin: 0;
+}
+
+/* projects */
+.projects {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.projects-slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.project-text {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-title {
+  flex-basis: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 42px;
+}
+
+.project-time,
+.project-cost {
+  flex-basis: 50%;
+  margin-bottom: 44px;
+}
+.project-time,
+.project-cost,
+.project-feedback {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-icon {
+  margin-right: 16px;
+}
+
+.project-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 0 7px;
+}
+
+.project-paragraph {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.projects-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFBB01;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.projects-bullet-active {
+  background: #FFBB01;
 }
 
 /* contacts */
